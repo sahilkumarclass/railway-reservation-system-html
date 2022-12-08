@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="login.css">
+<style>
+  form{
+    text-align: left;
+  }
+</style>
+</head>
+<body style="background-image:url('raillogin.png');background-size: 100%;background-attachment: fixed;">
+
+<pre>
+  <p>
+ 
+ 
+ 
+ 
+ 
+        
+          
+          <a href="https://www.makemytrip.com/"><video  height="250" loop controls autoplay muted ><source src="MakeyTripAdd.mp4" type="video/mp4"></a>
+          
+</p></pre>
+
+<button class="open-button" onclick="openForm()">LOGIN</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>USERNAME</b></label>
+    <input type="text" placeholder="USERNAME" name="email" required>
+
+    <label for="psw"><b>PASSWORD</b></label>
+    <input type="password" placeholder="PASSWORD" name="psw" required>
+
+    <button type="submit" class="btn"><a href="http://127.0.0.1:5500/CSE-326%20PROJECT/after%20login.html">Login</a></button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>

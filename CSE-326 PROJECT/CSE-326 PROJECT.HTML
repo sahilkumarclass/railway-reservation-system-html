@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="icon" href="https://www.irctc.co.in/nget/assets/images/secondry-logo.png" alt="Indian Railways">
+    <title>Railway Reservation System</title>
+    <link rel="stylesheet" href="CSE-326 PROJECT-1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Titillium+Web:wght@200;300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Secular+One&family=Titillium+Web:wght@200;300&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="navgbar">
+        <pre><br>                         <a href="http://127.0.0.1:5500/CSE-326%20PROJECT/login.html"><span class="container"><button type="Login" class="login">Login</button></span></a>      <a href="https://www.irctc.co.in/nget/profile/user-registration" target="blank" style="font-size:24px ;">REGISTER</a>     <a href="https://www.bus.irctc.co.in/home" target="blank" style="font-size:24px;">BUSES</a>     <a href="https://www.air.irctc.co.in/" target="blank" style="font-size:24px;">FLIGHTS</a>     <a href="https://www.hotel.irctctourism.com/hotel" target="blank" style="font-size:24px;">HOTELS</a>     <a href="http://127.0.0.1:5500/CSE-326%20PROJECT/agent%20login.html"><span class="container"><button type="AGENT LOGIN" class="btn">AGENT LOGIN</button></span></a>      <span id="clock">10:10:01</span> <script type="text/javascript">
+            setInterval(displayclock, 500)
+            function displayclock () {
+                var time = new Date();
+                var hrs = time.getHours();
+                var min = time.getMinutes();
+                var sec = time.getSeconds();
+        
+                if (hrs > 12) {
+                    hrs = hrs - 12;
+                }
+                if (hrs == 0) {
+                    hrs = 12;
+                }
+                if (hrs < 10) {
+                    hrs = "0" + hrs;
+                }
+                if (min < 10) {
+                    min = "0" + min;
+                }
+                if (sec < 10) {
+                    sec = "0" + sec;
+                }
+                document.getElementById("clock").innerHTML = hrs + ":" + min + ":" + sec;
+            }
+        </script>       
+    </pre>
+    </div>
+    <div class="container12">
+        <p>BOOK TICKETS</p>
+    </div>
+    <div class="form1">
+        <form>
+            <label>FROM: &#128205; </label><select>
+                <option value="delhi">--:SELECT:--</option>
+                <option value="delhi">MUMBAI</option>
+                <option value="delhi">NEW DELHI</option>
+                <option value="delhi">BANGLORE</option>
+                <option value="delhi">KOLKATA</option>
+                <option value="delhi">PUNE</option>
+                <option value="delhi">AMRITSAR</option>
+            </select><span style="color: white;">.................................</span>
+            <form action=method="post">DATE:<span style="color: white;">.........</span> <input type="date" name=""
+                    value=""></form>
+
+            <br><br>
+            <label>TO<span style="color: white;">.......</span>: &#128205; </label><select>
+                <option value="delhi">--:SELECT:--</option>
+                <option value="delhi">MUMBAI</option>
+                <option value="delhi">NEW DELHI</option>
+                <option value="delhi">BANGLORE</option>
+                <option value="delhi">KOLKATA</option>
+                <option value="delhi">PUNE</option>
+                <option value="delhi">AMRITSAR</option>
+            </select><span style="color: white;">...............................</span>
+            <lable>CLASSES : </lable><select>
+                <option value="select">--:SELECT:--</option>
+                <option value="ALL CLASSES">ALL CLASSES</option>
+                <option value="AC First Class (1A)">AC First Class (1A)</option>
+                <option value="AC Second Class (2A)">AC Second Class (2A)</option>
+                <option value="AC Third Class (3A)">AC Third Class (3A)</option>
+            </select>
+            <br><br>
+            <br>
+            <label>QUOTA:<span style="color: white;">-..</span> </label><select>
+                <option value="select">--:SELECT:--</option>
+                <option value="GENERAL(GN)">GENERAL</option>
+                <option value="LADIES">LADIES</option>
+                <option value="LOWER BERTH/SR.CITIZEN">LOWER BERTH/SR.CITIZEN</option>
+                <option value="PERSON WITH DISABILITY">PERSON WITH DISABILITY</option>
+                <option value="TATKAL">TATKAL</option>
+            </select>
+            <br>
+            <br>
+            <input type="radio" id="Person With Disability" name="fav_language" value="Person With Disability"><label
+                for="Person With Disability">Person With Disability</label><span
+                style="color: white;">.......................</span><input type="radio" id="Person With Disability"
+                name="fav_language" value="Person With Disability"><label for="Person With Disability">Flexible With
+                Date</label><br>
+            <input type="radio" id="Person With Disability" name="fav_language" value="Person With Disability"><label
+                for="Person With Disability">Train With Available Berth</label><span
+                style="color: white;">................</span><input type="radio" id="Person With Disability"
+                name="fav_language" value="Person With Disability"><label for="Person With Disability">Railway Pass
+                Concession</label><br>
+
+
+        </form>
+        <div class="search"><a href="http://127.0.0.1:5501/train%20detail.html">SEARCH</a></div>
+    </div>
+    <div class="container2">
+        <span style="color:rgb(221, 12, 12);">NEW: </span>Now you can book tickets through our app <br> <strong><span
+                style="color:rgb(118, 16, 81);"><a href="https://contents.irctc.co.in/en/IRCTC_andriod_App.html">"BOOK
+                    MY JOURNEY"</a></span></strong><br>Click on this to download the app
+    </div>
+    <div class="scroll">
+        <a href="https://www.canarahsbclife.com/" target="_blank"> <img src="bw add.png" height="80px"
+                width="800px"></a>
+    </div>
+    <div class="more">
+        <a href="https://www.irctctourism.com/pacakage_description?packageCode=NDR045" target="blank"><img
+                src="touradd.png" height="200px"> </a><br><br>
+        Have you not found the right one?<br>
+        Find a service suitable for you here.<br><br>
+        <div class="grow"><a
+                href="https://www.tripsinsider.com/flights/?lpage=k&lb=skys&gclid=Cj0KCQiAm5ycBhCXARIsAPldzoUgJdKtp6FvdDX4lOGlzMVkRDpUkBCFsl42PJvWlMxup-5skIZ0ddcaAhE7EALw_wcB"
+                target="_blank"><img src="flights.png" height="160px"></a><a
+                href="https://www.hotel.irctctourism.com/hotel" target="_blank"><img src="hotle.png"
+                    height="160px"></a><a
+                href="https://raildrishti.indianrailways.gov.in/raildrishti/raildrishtiv3/IRCTCKitchen.jsp"
+                target="_blank"><img src="dristhi.png" height="160px"></a><a href="https://www.ecatering.irctc.co.in/"
+                target="_blank"><img src="food.png" height="160px"></a><a href="https://www.bus.irctc.co.in/home"
+                target="_blank"><img src="bus.png" height="160px"></a></div>
+        <div class="grow"><a
+                href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=&category="
+                target="_blank"><img src="holiday.png" height="160px"></a><a
+                href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=Domestic&sector=All&bdar=3"
+                target="_blank"><img src="tourist.png" height="160px"></a><a
+                href="https://www.irctctourism.com/gallery/" target="_blank"><img src="hill.png" height="160px"></a><a
+                href="https://www.ftr.irctc.co.in/ftr/" target="_blank"><img src="charter.png" height="160px"></a><a
+                href="https://www.irctctourism.com/gallery/" target="_blank"><img src="gallery.png" height="160px"></a>
+        </div>
+        <div class="vid">
+            <video height="350px" width="600px" loop controls autoplay muted>
+                <source src="Indian Railways Drone Video.mp4" type="video/mp4">
+        </div>
+    </div>
+    <div class="scroll2"><a href="https://www.canva.com/" target="_blank"> <img src="canva add.png" height="80px"width="800px"></a></div>
+    <div class="downs">
+        <div class="item"><img src="exterior.jpg" alt="Norway" style="width=50px">
+            <h2>Maharajas' Express</h2><br> Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a
+            sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and
+            modern amenities are amalgamated for an “Experience Unsurpassed”.It has been a winner of “World’s Leading
+            Luxury train”.
+        </div>
+        <div class="item"><img src="Thailand.jpg" alt="Norway" style="width=50px">
+            <h2> International Packages</h2><br>Best deals in International Holiday packages, handpicked by IRCTC, for
+            Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The
+            packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a
+            hassle-free and memorable experience.
+        </div>
+        <div class="item"><img src="Kashmir.jpg" alt="Norway" style="width=50px">
+            <h2> Domestic Air Packages</h2><br>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata
+            Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East,Sand-dunes of
+            Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all.
+            Discover India through IRCTC!
+        </div>
+        <div class="item"><img src="Bharat_Gaurav.jpg" alt="Norway" style="width=40px">
+            <h2>Bharat Gaurav Tourist Train</h2><br>IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier
+            accommodation on train specially designed to promote domestic tourism in India. This train runs on various
+            theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days
+            trip and showcase India’s rich cultural heritage.
+        </div>
+        <div class="item"><img src="Manali.jpg" alt="Norway" style="width=40px">
+            <h2>Rail Tour Packages</h2><br>IRCTC offers Exclusive Rail tour packages with confirmed train tickets,
+            sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or
+            divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land
+            packages to these destinations are also available.
+        </div>
+        <div class="item"><img src="kedara.jpg" alt="Norway" style="width=40px">
+            <h2>Devotional Tour Packages</h2><br>IRCTC operates Pilgrimage Special Tour Packages are especially designed
+            for those who seek spiritual peace. The ultimate purpose of the spiritual journey is to experience bliss and
+            to connect with the Supreme Power.We have now covered the speical tours of places such as Rameshwaram,
+            Kedarnath Ayodhya, Dwarka, etc
+        </div>
+    </div>
+    <div class="social">
+        <pre> <div class="sos">  Get Connected with us on social networks :      <a href="https://www.facebook.com/IRCTCofficial/"><img src="fb.png" height="30px" ></a>       <a href="https://www.youtube.com/c/IRCTCOFFICIAL"><img src="youtube.png" height="30px" ></a>      <a href="https://www.instagram.com/irctc.official/?igshid=yyg5byow704l"><img src="inst.png" height="30px" ></a>     <a href="https://www.linkedin.com/company/irctcofficial"><img src="linkdin.png" height="30px"></a>      <a href="https://in.pinterest.com/irctcofficial/"><img src="pintrest.png" height="30px"></a>      <a href="https://www.tumblr.com/irctcofficial"><img src="tumbler.png" height="30px" ></a>      <a href="https://twitter.com/IRCTCofficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twit.png" height="30px" ></a></pre>
+    </div>
+    </div>
+    <div class="lastscroll">
+
+
+        <div class="it">IRCTC Trains &#9698;</div>
+        <div class="it">How To &#9698;</div>
+        <div class="it">For Newly Migrated Agents &#9698;</div>
+        <div class="it">General Information &#9698;</div>
+        <div class="it">IRCTC Official App &#9698;</div>
+        <div class="it">IRCTC Zone &#9698;</div>
+        <div class="it">Important Information &#9698;</div>
+        <div class="it">Advertise with us &#9698;</div>
+        <div class="it">Policies &#9698;</div>
+        <div class="it">Agents &#9698;</div>
+        <div class="it">Refund Rules &#9698;;</div>
+        <div class="it">Ask Disha ChatBot &#9698;</div>
+        <div class="it">Enquiries &#9698;</div>
+        <div class="it">Person With Disability Facilities &#9698;</div>
+        <div class="it">About us &#9698;</div>
+
+
+
+
+    </div>
+    <div class="copyright">
+        <span style="height=20px">&copy;</span> All Rights Reserved<br>Designed by SAHIL KUMAR
+    </div>
+</body>
+</html>
+<script>
+    alert("Please Login To Move further")
+</script>
